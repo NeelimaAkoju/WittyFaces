@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witty Fates - Virtual Fortune Teller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Witty Fates</h1>
+    </header>
+    <h2 id="subHeader" class="sub-header">Know your fortune by Numbers or Cards</h2>
+    <div class="container">
+        <h3 id="click-below">Click below</h3>
+        <div id="selection">
+            <button id="number-button"><img src="images/Numbers.png" alt="Numbers"></button>
+            <button id="card-button"><img src="images/CardsImage.jpeg" alt="Cards"></button>
+        </div>
+        <div id="number-selection" class="hidden">
+            <h2>Select a number from 1 to 10</h2>
+            <div class="options numbers">
+                <button class="number" data-value="1"><img src="images/Number1.jpeg" alt="1"></button>
+                <button class="number" data-value="2"><img src="images/Number2.jpeg" alt="2"></button>
+                <button class="number" data-value="3"><img src="images/Number3.jpeg" alt="3"></button>
+                <button class="number" data-value="4"><img src="images/Number4.jpeg" alt="4"></button>
+                <button class="number" data-value="5"><img src="images/Number5.jpeg" alt="5"></button>
+                <button class="number" data-value="6"><img src="images/Number6.jpeg" alt="6"></button>
+                <button class="number" data-value="7"><img src="images/Number7.jpeg" alt="7"></button>
+                <button class="number" data-value="8"><img src="images/Number8.jpeg" alt="8"></button>
+                <button class="number" data-value="9"><img src="images/Number9.jpeg" alt="9"></button>
+                <button class="number" data-value="10"><img src="images/Number0.jpeg" alt="10"></button>
+            </div>
+        </div>
+        <div id="card-selection" class="hidden">
+            <h2>Select a card from the stack</h2>
+            <div class="options cards">
+                <button class="card" data-value="A"><img src="images/Card-A.jpeg" alt="A"></button>
+                <button class="card" data-value="2"><img src="images/Card-2.jpeg" alt="2"></button>
+                <button class="card" data-value="3"><img src="images/Card-3.jpeg" alt="3"></button>
+                <button class="card" data-value="4"><img src="images/Card-4.jpeg" alt="4"></button>
+                <button class="card" data-value="5"><img src="images/Card-5.jpeg" alt="5"></button>
+                <button class="card" data-value="6"><img src="images/Card-6.jpeg" alt="6"></button>
+                <button class="card" data-value="7"><img src="images/Card7.jpeg" alt="7"></button>
+                <button class="card" data-value="8"><img src="images/Card-8.jpeg" alt="8"></button>
+                <button class="card" data-value="9"><img src="images/Card-9.jpeg" alt="9"></button>
+                <button class="card" data-value="10"><img src="images/Card-10.jpeg" alt="10"></button>
+                <button class="card" data-value="J"><img src="images/CardJ.jpeg" alt="J"></button>
+                <button class="card" data-value="Q"><img src="images/Card-Q.jpeg" alt="Q"></button>
+                <button class="card" data-value="K"><img src="images/Card-K.jpeg" alt="K"></button>
+            </div>
+        </div>
+        <div id="fortune" class="hidden">
+            <h2>Your Fortune</h2>
+            <p id="fortune-message"></p>
+            <button id="back-button">Go Back</button>
+        </div>
+    </div>
+    <script src="uselessweb.js"></script>
+</body>
+</html>

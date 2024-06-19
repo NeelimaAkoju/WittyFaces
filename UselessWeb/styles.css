@@ -1,0 +1,131 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-image: url('images/flowersBG.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(253 207 207);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    color: #634545;
+    font-size: 3em;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.sub-header {
+    margin-top: 15%; /* Adjust to align below the fixed header */
+    color: #634545;
+    font-size: 1.5em;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h3 {
+    margin: 10px 0;
+    color: rgb(253 207 207);
+    font-size: 1.2em;
+    animation: blink 1.5s linear infinite;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#number-button img{
+    height: 130px;
+}
+button img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.options button {
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.options button img {
+    width: 60px;
+}
+
+.card img {
+    height: 90px; /* Increased height for card images */
+}
+
+.hidden {
+    display: none;
+}
+
+#fortune-message {
+    font-size: 1.5em; /* Increased font size for fortune message */
+}
+
+#back-button {
+    background-color: rgb(253 207 207); /* Background color for the Go Back button */
+    color: #634545;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+    background-color: rgb(251, 169, 169); /* Darker shade on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
